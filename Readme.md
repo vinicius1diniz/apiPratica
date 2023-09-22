@@ -1,3 +1,3 @@
 # Usando Spring + PostgreSQL
 
-##### * Proejto: JBS POC
+##### * Projeto: JBS POC
