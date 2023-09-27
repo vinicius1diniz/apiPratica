@@ -4,7 +4,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
-COPY --from=BUILD /target/SpringbootMongodbAtlas-0.0.1-SNAPSHOT.jar kitbyte.jar
+COPY --from=BUILD /target/*.jar kitbyte.jar
 
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "kitbyte.jar"]
